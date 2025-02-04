@@ -1,3 +1,3 @@
-# Important Notes
+# Instagram Story
 
-I haven't managed to figure out how to programmatically modify the second bubble if its consecutive. I have managed to figure 
+This is a stateful instagram story component that passes avatar image, image, count, and description.
