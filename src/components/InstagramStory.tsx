@@ -66,8 +66,8 @@ export default function InstagramStory({ stories }: { stories: Story[] }) {
 								<div className="flex-row grow text-start font-bold mb-2">
 									Post Description
 								</div>
-								<div className="items-start">
-									<div className="flex-row grow text-start">
+								<div className="items-center">
+									<div className="flex flex-row items-center gap-2">
 										<button
 											type="button"
 											className="appearance-none"
@@ -92,7 +92,9 @@ export default function InstagramStory({ stories }: { stories: Story[] }) {
 												/>
 											</svg>
 										</button>
-										<span>{counter[story.id]} likes.</span>
+										<span className="font-semibold">
+											{counter[story.id] | 0} likes.
+										</span>
 									</div>
 								</div>
 							</div>
