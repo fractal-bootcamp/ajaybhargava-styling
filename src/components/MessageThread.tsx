@@ -18,7 +18,7 @@ function isConsecutive(msg: Message, idx: number, messages: Message[]){
 
 function Message({msg, isConsecutive}: MessageProps){
     return (
-        <div id="Message" className={`grow ${msg.userId === 2 ? 'bg-gray-100' : 'bg-blue-300'} border-1 p-4 text-left ${isConsecutive ? 'rounded-br-lg rounded-bl-lg rounded-tr-lg' : 'rounded-br-lg rounded-tl-lg rounded-tr-lg'}`}>
+        <div id="Message" className={`grow ${msg.userId === 2 ? 'bg-gray-100' : 'bg-blue-300'} border-1 p-4 text-left rounded-2xl`}>
             {msg.message}
         </div>
     )

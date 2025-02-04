@@ -26,6 +26,13 @@ const messages = [
     userId: 1,
     message: "Something salacious. Has come up in the news. I'm not sure what to make of it. I'm not sure if I should be worried. I'm not sure if I should be excited. I'm not sure if I should be anything. I'm just not sure."
   },
+  {
+    id: 5,
+    username: "One",
+    userId: 2,
+    message: "Something salacious. Has come up in the news. I'm not sure what to make of it. I'm not sure if I should be worried. I'm not sure if I should be excited. I'm not sure if I should be anything. I'm just not sure."
+  },
+
 ]
 
 function App() {
