@@ -25,7 +25,7 @@ const messages = [
     username: "One",
     userId: 1,
     message: "Something salacious. Has come up in the news. I'm not sure what to make of it. I'm not sure if I should be worried. I'm not sure if I should be excited. I'm not sure if I should be anything. I'm just not sure."
-  }
+  },
 ]
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
       <div className='text-4xl py-4 text-start'>
         Message Thread
       </div>
-      <MessageThread />
+      <MessageThread messages={messages} />
     </div>
   )
 }
