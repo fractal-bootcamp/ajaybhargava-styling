@@ -1,46 +1,32 @@
-import './App.css'
-import TaskList from './components/TaskList'
+import "./App.css";
+import InstagramStory from "./components/InstagramStory";
 
-const items = [
-  {
-      id: 1,
-      title: "Laundry",
-      description: "Wash, dry, fold, and put away clothes and linens",
-      isCompleted: false
-  },
-  {
-      id: 2,
-      title: "Dishwashing",
-      description: "Wash and dry dishes, pots, pans, and utensils.",
-      isCompleted: false
-  },
-  {
-      id: 3,
-      title: "Vacuuming",
-      description: "Vacuum carpets, rugs, and floors throughout the house",
-      isCompleted: false
-  },
-  {
-      id: 4,
-      title: "Dusting",
-      description: "Dust furniture, shelves, and other surfaces",
-      isCompleted: false
-  },
-]
-
+const stories = [
+	{
+		id: 1,
+		avatar: "./images/avatar.png",
+		image: "./images/flowers.jpeg",
+		name: "Helena",
+		group: "Group name",
+		time: "3 min ago",
+	},
+	{
+		id: 2,
+		avatar: "./images/avatar.png",
+		image: "./images/flowers.jpeg",
+		name: "Helena",
+		group: "Group name",
+		time: "3 min ago",
+	},
+];
 
 function App() {
-  return (
-    <div>
-      <div className='text-6xl text-start'>
-        Task List
-      </div>
-      <div className='text-sm text-start'>
-        Sorted by completion
-      </div>
-      <TaskList items={items} />
-    </div>
-  )
+	return (
+		<div>
+			<div className="text-4xl py-4 text-start">Post</div>
+			<InstagramStory stories={stories} />
+		</div>
+	);
 }
 
-export default App
+export default App;
